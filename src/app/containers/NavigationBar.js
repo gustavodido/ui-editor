@@ -28,7 +28,7 @@ class NavigationBar extends Component {
                 <NavbarBrand href="/">Allocation</NavbarBrand>
                     <Nav className="mr-auto" navbar>
                         <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                            <DropdownToggle nav caret active>
+                            <DropdownToggle nav caret>
                                 Workspace
                             </DropdownToggle>
                             <DropdownMenu>

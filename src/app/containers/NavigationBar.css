@@ -1,5 +1,7 @@
 .dropdown-item {
     font-size: 14px;
+    position: relative;
+    z-index: 10000;
 }
 
 .navbar {

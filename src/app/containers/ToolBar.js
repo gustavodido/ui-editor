@@ -4,7 +4,7 @@ import './ToolBar.css';
 class ToolBar extends Component {
     render() {
         return (
-            <div></div>
+            <div className="toolbar"></div>
         );
     }
 }
