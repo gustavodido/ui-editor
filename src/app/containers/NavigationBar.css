@@ -1,3 +1,7 @@
 .dropdown-item {
     font-size: 14px;
 }
+
+.navbar {
+    background-color: #1964a8 !important;
+}
