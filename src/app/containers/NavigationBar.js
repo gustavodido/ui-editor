@@ -25,10 +25,10 @@ class NavigationBar extends Component {
     render() {
         return (
             <Navbar color="dark" dark={true} fixed="top" expand={true}>
-                <NavbarBrand href="/">Allocation UI</NavbarBrand>
+                <NavbarBrand href="/">Allocation</NavbarBrand>
                     <Nav className="mr-auto" navbar>
                         <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                            <DropdownToggle nav caret>
+                            <DropdownToggle nav caret active>
                                 Workspace
                             </DropdownToggle>
                             <DropdownMenu>
