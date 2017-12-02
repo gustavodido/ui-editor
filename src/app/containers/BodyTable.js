@@ -30,21 +30,26 @@ class BodyTable extends Component {
 
     render() {
         return (
-            <ReactDataGrid
-                rowKey="id"
-                columns={this._columns}
-                rowGetter={this.rowGetter}
-                rowsCount={this.state.rows.length}
-                minHeight={800}
-                rowSelection={{
-                    showCheckbox: true,
-                    enableShiftSelect: true,
-                    onRowsSelected: this.onRowsSelected,
-                    onRowsDeselected: this.onRowsDeselected,
-                    selectBy: {
-                        indexes: this.state.selectedIndexes
-                    }
-                }}/>);
+            <div className="bodyTable">
+                <ReactDataGrid
+                    rowKey="id"
+                    columns={this._columns}
+                    rowGetter={this.rowGetter}
+                    rowsCount={this.state.rows.length}
+                    minHeight={800}
+                    minWidth={2000}
+                    rowSelection={{
+                        showCheckbox: true,
+                        enableShiftSelect: true,
+                        onRowsSelected: this.onRowsSelected,
+                        onRowsDeselected: this.onRowsDeselected,
+                        selectBy: {
+                            indexes: this.state.selectedIndexes
+                        }
+                    }}/>
+            </div>
+        );
+
     }
 }
 

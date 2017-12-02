@@ -3,31 +3,37 @@ class Datasource {
         return [
             {
                 key: 'isReleased',
-                name: 'RELEASED'
+                name: 'RELEASED',
+                width: 80
             },
             {
                 key: 'brand',
-                name: 'BRAND'
+                name: 'BRAND',
+                width: 80
             },
             {
                 key: 'market',
-                name: 'MARKET'
+                name: 'MARKET',
+                width: 80
             },
             {
                 key: 'merchHier',
-                name: 'MERCH HIER'
+                name: 'MERCH HIER',
             },
             {
                 key: 'ccNumber',
-                name: 'CC NUMBER'
+                name: 'CC NUMBER',
+                width: 120
             },
             {
                 key: 'isd',
-                name: 'IN STORE DATE'
+                name: 'IN STORE DATE',
+                width: 120
             },
             {
                 key: 'mkd',
-                name: 'MARKDOWN DATE'
+                name: 'MARKDOWN DATE',
+                width: 150
             },
             {
                 key: 'distros',
@@ -35,43 +41,53 @@ class Datasource {
             },
             {
                 key: 'aps',
-                name: 'APS'
+                name: 'APS',
+                width: 80
             },
             {
                 key: 'paps',
-                name: 'PROMOTED APS'
+                name: 'PAPS',
+                width: 80
             },
             {
                 key: 'cp',
-                name: 'CYCLE PERIOD'
+                name: 'CP',
+                width: 80
             },
             {
                 key: 'sp',
-                name: 'SAFETY PERIOD'
+                name: 'SP',
+                width: 80
             },
             {
                 key: 'iaf',
-                name: 'IAF'
+                name: 'IAF',
+                width: 80
             },
             {
                 key: 'iafExpiration',
-                name: 'IAF EXPIRATION'
+                name: 'IAF EXPIRATION',
+                width: 120
             },
             {
                 key: 'visMin',
-                name: 'VIS MIN'
+                name: 'VIS MIN',
+                width: 80
             },
             {
                 key: 'visMinPeriod',
-                name: 'VIS MIN PERIOD'
+                name: 'VIS MIN PERIOD',
+                width: 120
             },
             {
                 key: 'ti',
-                name: 'TI'
+                name: 'TI',
+                width: 80
             },
             {
                 key: 'delta',
-                name: 'Δ'
+                name: 'Δ',
+                width: 80
             }
         ];
     }
