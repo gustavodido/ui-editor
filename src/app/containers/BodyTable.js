@@ -1,35 +1,18 @@
 import React, {Component} from 'react';
+
 import './BodyTable.css';
+import Datasource from '../data/Datasource'
 
 const ReactDataGrid = require('react-data-grid');
 
 class BodyTable extends Component {
     constructor(props) {
         super(props);
-        this._columns = [
-            {
-                key: 'id',
-                name: 'ID'
-            },
-            {
-                key: 'title',
-                name: 'Title'
-            },
-            {
-                key: 'count',
-                name: 'Count'
-            }
-        ];
 
-        let rows = [];
-        for (let i = 1; i < 1000; i++) {
-            rows.push({
-                id: i,
-                title: 'Title ' + i,
-                count: i * 1000
-            });
-        }
-        this.state = {rows, selectedIndexes: []};
+        let ds = new Datasource();
+
+        this._columns = ds.getColumns();
+        this.state = {rows: ds.getData(), selectedIndexes: []};
     }
 
     rowGetter = (i) => {
