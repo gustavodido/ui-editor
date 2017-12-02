@@ -6,6 +6,7 @@ import {
 } from 'reactstrap';
 
 import './NavigationBar.css';
+import logo from './Logo.png';
 
 class NavigationBar extends Component {
     constructor(props) {
@@ -22,31 +23,35 @@ class NavigationBar extends Component {
             dropdownOpen: !this.state.dropdownOpen
         });
     }
+
     render() {
         return (
             <Navbar color="dark" dark={true} fixed="top" expand={true}>
-                <NavbarBrand href="/">Allocation</NavbarBrand>
-                    <Nav className="mr-auto" navbar>
-                        <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                            <DropdownToggle nav caret>
-                                Workspace
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                <DropdownItem>Load Customer Choices</DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>Reset</DropdownItem>
-                            </DropdownMenu>
-                        </Dropdown>
-                        <NavItem>
-                            <NavLink href="#">Link</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">Another Link</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink disabled href="#">Disabled Link</NavLink>
-                        </NavItem>
-                    </Nav>
+                <NavbarBrand href="/">
+                    <img src={logo} alt="Logo" className="logo" />
+                    Allocation
+                </NavbarBrand>
+                <Nav className="mr-auto" navbar>
+                    <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                        <DropdownToggle nav caret>
+                            Workspace
+                        </DropdownToggle>
+                        <DropdownMenu>
+                            <DropdownItem>Load Customer Choices</DropdownItem>
+                            <DropdownItem divider/>
+                            <DropdownItem>Reset</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                    <NavItem>
+                        <NavLink href="#">Link</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="#">Another Link</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink disabled href="#">Disabled Link</NavLink>
+                    </NavItem>
+                </Nav>
             </Navbar>
         );
     }

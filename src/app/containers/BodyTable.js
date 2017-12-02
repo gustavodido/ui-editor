@@ -5,7 +5,7 @@ import './BodyTable.css';
 class BodyTable extends Component {
     render() {
         return (
-            <Table bordered striped>
+            <Table bordered striped responsive={false}>
                 <thead>
                 <tr>
                     <th className="text-center">
@@ -19,11 +19,7 @@ class BodyTable extends Component {
                     <th className="text-center">Mkd Date</th>
                     <th className="text-center">Season Code</th>
                     <th className="text-center">Distro</th>
-                    <th className="text-center">DC<span id="toggle-all-dcs"
-                                                        className="level-toggle cc-level-toggle">
-                            <i className="icon ion-plus-round"> </i>
-                        </span>
-                    </th>
+                    <th className="text-center">DC</th>
                     <th className="text-center">Promoted APS</th>
                     <th className="text-center">Cycle Period</th>
                     <th className="text-center">Safety Period</th>
@@ -52,19 +48,64 @@ class BodyTable extends Component {
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td></td>
+                    <td></td>
+                    <td>118721001</td>
+                    <td>US</td>
+                    <td>2017-09-25</td>
+                    <td>2017-12-17</td>
+                    <td>FAL 2017</td>
+                    <td>TIER 3 HOT (14)</td>
+                    <td>+</td>
+                    <td>0.5</td>
+                    <td>1.1</td>
+                    <td>7</td>
+                    <td>33.0</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>6</td>
+                    <td>172.00</td>
+                    <td>172</td>
                 </tr>
                 <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td></td>
+                    <td></td>
+                    <td>118721001</td>
+                    <td>US</td>
+                    <td>2017-09-25</td>
+                    <td>2017-12-17</td>
+                    <td>FAL 2017</td>
+                    <td>TIER 3 HOT (14)</td>
+                    <td>+</td>
+                    <td>0.5</td>
+                    <td>1.1</td>
+                    <td>7</td>
+                    <td>33.0</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>6</td>
+                    <td>172.00</td>
+                    <td>172</td>
                 </tr>
                 <tr>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td></td>
+                    <td></td>
+                    <td>118721001</td>
+                    <td>US</td>
+                    <td>2017-09-25</td>
+                    <td>2017-12-17</td>
+                    <td>FAL 2017</td>
+                    <td>TIER 3 HOT (14)</td>
+                    <td>+</td>
+                    <td>0.5</td>
+                    <td>1.1</td>
+                    <td>7</td>
+                    <td>33.0</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>6</td>
+                    <td>172.00</td>
+                    <td>172</td>
                 </tr>
                 </tbody>
             </Table>
