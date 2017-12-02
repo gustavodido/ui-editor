@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import NavigationBar from "./containers/NavigationBar";
 import BodyTable from "./containers/BodyTable";
-import ToolBar from "./containers/ToolBar";
 
 import './App.css';
 
@@ -12,14 +11,9 @@ class App extends Component {
             <div>
                 <NavigationBar/>
                 <Container fluid={true}>
-                    <Row noGutters={true}>
+                    <Row>
                         <Col>
-                            <ToolBar/>
-                        </Col>
-                    </Row>
-                    <Row noGutters={true}>
-                        <Col>
-                            <BodyTable/>
+                            <BodyTable />
                         </Col>
                     </Row>
                 </Container>
