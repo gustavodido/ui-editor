@@ -25,8 +25,7 @@ class BodyTable extends Component {
 
         for (let i = fromRow; i <= toRow; i++) {
             let rowToUpdate = rows[i];
-            let updatedRow = update(rowToUpdate, {$merge: updated});
-            rows[i] = updatedRow;
+            rows[i] = update(rowToUpdate, {$merge: updated});
         }
 
         this.setState({ rows });

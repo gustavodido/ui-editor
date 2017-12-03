@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3eb05b6-3db8-4ba3-b1b0-8a82709b8d8d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/containers/BodyTable.js" afterPath="$PROJECT_DIR$/src/app/containers/BodyTable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/data/Datasource.js" afterPath="$PROJECT_DIR$/src/app/data/Datasource.js" />
     </list>
@@ -17,21 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Datasource.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Datasource.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/data/Datasource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BodyTable.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BodyTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/containers/BodyTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -88,8 +89,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/containers/BodyTable.css" />
         <option value="$PROJECT_DIR$/src/app/App.css" />
-        <option value="$PROJECT_DIR$/src/app/data/Datasource.js" />
         <option value="$PROJECT_DIR$/src/app/containers/BodyTable.js" />
+        <option value="$PROJECT_DIR$/src/app/data/Datasource.js" />
       </list>
     </option>
   </component>
@@ -206,12 +207,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512198259535</updated>
-      <workItem from="1512198261442" duration="11115000" />
+      <workItem from="1512198261442" duration="11520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11115000" />
+    <option name="totallyTimeSpent" value="11520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="772" extended-state="6" />
@@ -354,8 +355,8 @@
         <state relative-caret-position="150">
           <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
-            <marker date="1512259355000" expanded="true" signature="0:621" ph="{&quot;name&quot;: &quot;ui-editor&quot;...}" />
-            <marker date="1512259355000" expanded="true" signature="84:91" ph="{&quot;react&quot;: &quot;^16.2.0&quot;...}" />
+            <marker date="1512260340000" expanded="true" signature="0:658" ph="{&quot;name&quot;: &quot;ui-editor&quot;...}" />
+            <marker date="1512260340000" expanded="true" signature="84:91" ph="{&quot;react&quot;: &quot;^16.2.0&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -376,21 +377,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/data/Datasource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/BodyTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/data/Datasource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -12,107 +12,123 @@ class Datasource {
                 key: 'isReleased',
                 name: 'RELEASED',
                 width: 80,
-                locked: true
+                resizable: true
             },
             {
                 key: 'image',
                 name: 'PRODUCT',
                 formatter: ImageFormatter,
                 width: 80,
-                locked: true
+                resizable: true
             },
             {
                 key: 'ccNumber',
                 name: 'CC NUMBER',
                 width: 120,
-                locked: true
+                resizable: true
             },
             {
                 key: 'brand',
                 name: 'BRAND',
-                width: 80
+                width: 80,
+                resizable: true
             },
             {
                 key: 'market',
                 name: 'MARKET',
-                width: 80
+                width: 80,
+                resizable: true
             },
             {
                 key: 'merchHier',
                 name: 'MERCH HIER',
-                width: 120
+                width: 120,
+                resizable: true
             },
             {
                 key: 'isd',
                 name: 'IN STORE DATE',
                 width: 120,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'mkd',
                 name: 'MARKDOWN DATE',
                 width: 150,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'distros',
                 name: 'DISTROS',
-                width: 120
+                width: 120,
+                resizable: true
             },
             {
                 key: 'aps',
                 name: 'APS',
                 width: 80,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'paps',
                 name: 'PAPS',
-                width: 80
+                width: 80,
+                resizable: true
             },
             {
                 key: 'cp',
                 name: 'CP',
-                width: 80
+                width: 80,
+                resizable: true
             },
             {
                 key: 'sp',
                 name: 'SP',
-                width: 80
+                width: 80,
+                resizable: true
             },
             {
                 key: 'iaf',
                 name: 'IAF',
                 width: 80,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'iafExpiration',
                 name: 'IAF EXPIRATION',
                 width: 120,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'visMin',
                 name: 'VIS MIN',
                 width: 80,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'visMinPeriod',
                 name: 'VIS MIN PERIOD',
                 width: 120,
-                editable: true
+                editable: true,
+                resizable: true
             },
             {
                 key: 'ti',
                 name: 'TI',
-                width: 80
+                width: 80,
+                resizable: true
             },
             {
                 key: 'delta',
                 name: 'Δ',
-                width: 80
+                width: 80,
+                resizable: true
             }
         ];
     }
