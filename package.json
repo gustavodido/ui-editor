@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "bootstrap": "4.0.0-beta.2",
+    "faker": "^4.1.0",
     "jquery": "1.9.1",
     "popper.js": "^1.12.9",
     "react": "15.6.1",
     "react-data-grid": "2.0.60",
+    "react-data-grid-addons": "^2.0.78",
     "react-dom": "15.6.1",
     "reactstrap": "^5.0.0-alpha.4"
   },

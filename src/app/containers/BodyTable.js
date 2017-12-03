@@ -19,15 +19,6 @@ class BodyTable extends Component {
         return this.state.rows[i];
     };
 
-    onRowsSelected = (rows) => {
-        this.setState({selectedIndexes: this.state.selectedIndexes.concat(rows.map(r => r.rowIdx))});
-    };
-
-    onRowsDeselected = (rows) => {
-        let rowIndexes = rows.map(r => r.rowIdx);
-        this.setState({selectedIndexes: this.state.selectedIndexes.filter(i => rowIndexes.indexOf(i) === -1)});
-    };
-
     render() {
         return (
             <div className="bodyTable">
@@ -37,16 +28,10 @@ class BodyTable extends Component {
                     rowGetter={this.rowGetter}
                     rowsCount={this.state.rows.length}
                     minHeight={800}
-                    minWidth={2000}
-                    rowSelection={{
-                        showCheckbox: true,
-                        enableShiftSelect: true,
-                        onRowsSelected: this.onRowsSelected,
-                        onRowsDeselected: this.onRowsDeselected,
-                        selectBy: {
-                            indexes: this.state.selectedIndexes
-                        }
-                    }}/>
+                    rowHeight={50}
+                    enableRowSelect={true}
+                    rowScrollTimeout={200}
+                    />
             </div>
         );
 

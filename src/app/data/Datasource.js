@@ -1,9 +1,22 @@
+import faker from 'faker'
+
+const { Formatters } = require('react-data-grid-addons');
+const { ImageFormatter } = Formatters;
+
+faker.locale = 'en_GB';
+
 class Datasource {
     getColumns() {
         return [
             {
                 key: 'isReleased',
                 name: 'RELEASED',
+                width: 80
+            },
+            {
+                key: 'image',
+                name: 'PRODUCT',
+                formatter: ImageFormatter,
                 width: 80
             },
             {
@@ -19,6 +32,7 @@ class Datasource {
             {
                 key: 'merchHier',
                 name: 'MERCH HIER',
+                width: 120
             },
             {
                 key: 'ccNumber',
@@ -37,7 +51,8 @@ class Datasource {
             },
             {
                 key: 'distros',
-                name: 'DISTROS'
+                name: 'DISTROS',
+                width: 120
             },
             {
                 key: 'aps',
@@ -94,9 +109,10 @@ class Datasource {
 
     getData() {
         let rows = [];
-        for (let i = 1; i < 100; i++) {
+        for (let i = 1; i < 10; i++) {
             rows.push({
                 id: i,
+                image: faker.image.avatar(),
                 brand: 'GAP',
                 market: 'US',
                 merchHier: 'HOT CHESTNUT',
