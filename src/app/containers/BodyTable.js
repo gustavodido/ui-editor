@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import './BodyTable.css';
 import Datasource from '../data/Datasource'
+import update from 'immutability-helper';
 
 const ReactDataGrid = require('react-data-grid');
 
@@ -19,6 +20,18 @@ class BodyTable extends Component {
         return this.state.rows[i];
     };
 
+    handleGridRowsUpdated = ({ fromRow, toRow, updated }) => {
+        let rows = this.state.rows.slice();
+
+        for (let i = fromRow; i <= toRow; i++) {
+            let rowToUpdate = rows[i];
+            let updatedRow = update(rowToUpdate, {$merge: updated});
+            rows[i] = updatedRow;
+        }
+
+        this.setState({ rows });
+    };
+
     render() {
         return (
             <div className="bodyTable">
@@ -30,7 +43,9 @@ class BodyTable extends Component {
                     minHeight={800}
                     rowHeight={50}
                     enableRowSelect={true}
+                    enableCellSelect={true}
                     rowScrollTimeout={200}
+                    onGridRowsUpdated={this.handleGridRowsUpdated}
                     />
             </div>
         );

@@ -11,13 +11,21 @@ class Datasource {
             {
                 key: 'isReleased',
                 name: 'RELEASED',
-                width: 80
+                width: 80,
+                locked: true
             },
             {
                 key: 'image',
                 name: 'PRODUCT',
                 formatter: ImageFormatter,
-                width: 80
+                width: 80,
+                locked: true
+            },
+            {
+                key: 'ccNumber',
+                name: 'CC NUMBER',
+                width: 120,
+                locked: true
             },
             {
                 key: 'brand',
@@ -35,19 +43,16 @@ class Datasource {
                 width: 120
             },
             {
-                key: 'ccNumber',
-                name: 'CC NUMBER',
-                width: 120
-            },
-            {
                 key: 'isd',
                 name: 'IN STORE DATE',
-                width: 120
+                width: 120,
+                editable: true
             },
             {
                 key: 'mkd',
                 name: 'MARKDOWN DATE',
-                width: 150
+                width: 150,
+                editable: true
             },
             {
                 key: 'distros',
@@ -57,7 +62,8 @@ class Datasource {
             {
                 key: 'aps',
                 name: 'APS',
-                width: 80
+                width: 80,
+                editable: true
             },
             {
                 key: 'paps',
@@ -77,22 +83,26 @@ class Datasource {
             {
                 key: 'iaf',
                 name: 'IAF',
-                width: 80
+                width: 80,
+                editable: true
             },
             {
                 key: 'iafExpiration',
                 name: 'IAF EXPIRATION',
-                width: 120
+                width: 120,
+                editable: true
             },
             {
                 key: 'visMin',
                 name: 'VIS MIN',
-                width: 80
+                width: 80,
+                editable: true
             },
             {
                 key: 'visMinPeriod',
                 name: 'VIS MIN PERIOD',
-                width: 120
+                width: 120,
+                editable: true
             },
             {
                 key: 'ti',
@@ -109,7 +119,7 @@ class Datasource {
 
     getData() {
         let rows = [];
-        for (let i = 1; i < 10; i++) {
+        for (let i = 1; i < 40; i++) {
             rows.push({
                 id: i,
                 image: faker.image.avatar(),
